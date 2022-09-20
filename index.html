@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+    <title>javascript postalcode</title>
+    
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./component.css">
+</head>
+<body onload="load()">
+    <header class="header">
+        <nav class="nav">
+            <div>
+                <a href="#intro" class="my">MY</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" >
+        <section style="margin:auto; background-color:aliceblue; color:blueviolet;"> 
+            <p style="display:block;">
+                Your Postal Code is:
+            </p>
+            <div class="list-postalCode postalCode" style="margin:auto; text-align: center; font-size: x-large; font-weight: 700;">
+                <!-- postal code is here -->
+            </div>
+        </section>
+        <div style="margin: auto">
+            <button class="btn" onclick="window.location.reload()">Clear</button>
+        </div>
+        <div style="margin: auto; color: gainsboro;">
+            <p>Harap tunggu page diload secara sempurna sebelum menggunakan fitur</p>
+        </div>
+
+        <section id="main_form">    
+            <div class="dropdown">
+                <a href="#" class="js-link province">Select Provinces<i class="fa fa-chevron-down"></i></a>
+                <ul class="list-province active">
+                    <!-- list is here -->
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="js-link city">Select City<i class="fa fa-chevron-down"></i></a>
+                <ul class="list-city  active">
+                    <!-- list is here -->
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="js-link district">Select Kecamatan<i class="fa fa-chevron-down"></i></a>
+                <ul class="list-district active ">
+                    <!-- list is here -->
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="js-link subDistrict">Select Kelurahan<i class="fa fa-chevron-down"></i></a>
+                <ul class="list-subDistrict  active">
+                    <!-- list is here -->
+                </ul>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <script type="text/javascript" src="./fetch.js"></script>
+
+    <script type="text/javascript" src="./main.js">
+
+    </script>
+
+
+    <footer >
+        <span >© 2022 Muhammad Yunus</span>
+        <ul >
+            <li></li>
+            <li>
+                <a href="https://www.instagram.com/snymnd/" class=" "><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/snymnd" class=""> <i class="fa fa-github"></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/muhammad-yunus-68920021b/" class="mr-4 "><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="mailto: muh.yunus310502@gmail.com" ><i class="fa fa-envelope "></i></a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
