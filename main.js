@@ -1,14 +1,3 @@
-const clear = () => {
-    // trigger window reload
-    window.location.reload();
-}
-
-let scopes = {
-    provinces: '',
-    cities: '',
-    districts: '',
-}
-
 const clearChild = (scope, n = 0) => {
     
     var list = document.querySelector(`.list-${scope}`);
@@ -68,7 +57,6 @@ getProvince().then((data) => {
 
 // get City
 const callCity = (provinces) => {
-    console.log(provinces);
     getCity(provinces).then((data) => {
         makeList(data, 'city', 'district', 1);
     });
@@ -76,7 +64,6 @@ const callCity = (provinces) => {
 
 // get District
 const callDistrict = (city) => {
-    console.log(city);
     getDistrict(city).then((data) => {
         makeList(data, 'district', 'subDistrict', 2);
     });
@@ -84,7 +71,6 @@ const callDistrict = (city) => {
 
 // get SubDistrict
 const callSubDistrict = (district) => {
-    console.log(district);
     getSubDistrict(district).then((data) => {
         makeList(data, 'subDistrict', 'postalCode', 3);
     });
@@ -92,7 +78,6 @@ const callSubDistrict = (district) => {
 
 // get PostalCode
 const callPostalCode = (subDistrict) => {
-    console.log(subDistrict);
     getPostalCode(subDistrict).then((data) => {
         h1 = document.createElement(`h1`);
         h1.innerHTML = data;
